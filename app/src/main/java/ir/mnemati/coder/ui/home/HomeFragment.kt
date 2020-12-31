@@ -37,6 +37,7 @@ class HomeFragment : Fragment() {
             textView.text = it
         })
         */
+
         /* ***** Define Widgets ***** */
         val txtInput:EditText = root.findViewById(R.id.etInput)
         val txtOutput:TextView = root.findViewById(R.id.tvOutput)
@@ -101,6 +102,7 @@ class HomeFragment : Fragment() {
             txtInput.text.clear()
             txtOutput.text = ""
             txtInput.requestFocus()
+            Toast.makeText(activity, "Clear", Toast.LENGTH_SHORT).show()
         }
 
         /* *****  When Copy button touched ***** */
