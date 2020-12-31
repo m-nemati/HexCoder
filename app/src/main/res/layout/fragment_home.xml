@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <TextView
+        android:id="@+id/tvInputTitle"
+        android:text="@string/textTitle"
+        android:textSize="20sp"
+        android:textColor="@color/orange"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/etInput"
+        android:paddingLeft="10dp"
+        android:textColor="@color/black"
+        android:gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnDecode"
+            android:text="@string/btnDecodeTitle"
+            android:textSize="18sp"
+            android:layout_margin="3dp"
+            android:layout_width="100dp"
+            android:layout_height="70dp"/>
+        <Button
+            android:id="@+id/btnEncode"
+            android:text="@string/btnEncodeTitle"
+            android:textSize="18sp"
+            android:layout_margin="3dp"
+            android:layout_width="100dp"
+            android:layout_height="70dp"/>
+
+        <Button
+            android:id="@+id/btnClear"
+            android:text="@string/btnClearTitle"
+            android:textSize="18sp"
+            android:layout_margin="3dp"
+            android:layout_width="100dp"
+            android:layout_height="70dp"/>
+
+        <Button
+            android:id="@+id/btnCopy"
+            android:text="@string/btnCopyTitle"
+            android:textSize="18sp"
+            android:layout_margin="3dp"
+            android:layout_width="100dp"
+            android:layout_height="70dp"/>
+
+    </LinearLayout>
+    <TextView
+        android:text="@string/txtResultHint"
+        android:textSize="20sp"
+        android:textColor="@color/orange"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/tvOutput"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+</LinearLayout>
