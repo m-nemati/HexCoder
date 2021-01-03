@@ -11,7 +11,22 @@
         android:text="@string/info_header"
         android:textSize="24sp"
         android:padding="10dp"
+        android:textStyle="bold"
         android:textColor="@color/orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="@string/info_ziaee"
+        android:textSize="24sp"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:text="@string/info_nemati"
+        android:textSize="24sp"
+        android:padding="10dp"
+        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 

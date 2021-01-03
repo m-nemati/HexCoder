@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Hex De/EnCode</string>
+    <string name="app_name">Hex Coder</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Hex Coder</string>
@@ -19,5 +19,7 @@
     <string name="txtResultHint">Output</string>
 
     <string name="info_header">Programmers:</string>
+    <string name="info_ziaee">Hamidreza Ziaee</string>
+    <string name="info_nemati">Mostafa Nemati</string>
 
 </resources>

@@ -29,38 +29,43 @@
     <LinearLayout
         android:gravity="center"
         android:orientation="horizontal"
+        android:padding="4dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <Button
             android:id="@+id/btnDecode"
             android:text="@string/btnDecodeTitle"
-            android:textSize="18sp"
+            android:textSize="14sp"
             android:layout_margin="3dp"
-            android:layout_width="100dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
             android:layout_height="70dp"/>
         <Button
             android:id="@+id/btnEncode"
             android:text="@string/btnEncodeTitle"
-            android:textSize="18sp"
+            android:textSize="14sp"
             android:layout_margin="3dp"
-            android:layout_width="100dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
             android:layout_height="70dp"/>
 
         <Button
             android:id="@+id/btnClear"
             android:text="@string/btnClearTitle"
-            android:textSize="18sp"
+            android:textSize="14sp"
             android:layout_margin="3dp"
-            android:layout_width="100dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
             android:layout_height="70dp"/>
 
         <Button
             android:id="@+id/btnCopy"
             android:text="@string/btnCopyTitle"
-            android:textSize="18sp"
+            android:textSize="14sp"
             android:layout_margin="3dp"
-            android:layout_width="100dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
             android:layout_height="70dp"/>
 
     </LinearLayout>
@@ -76,7 +81,8 @@
         android:textSize="20sp"
         android:textColor="@color/black"
         android:paddingLeft="10dp"
+        android:paddingTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="200dp"/>
+        android:layout_height="match_parent"/>
 
 </LinearLayout>
