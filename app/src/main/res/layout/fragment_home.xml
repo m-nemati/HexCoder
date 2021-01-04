@@ -34,16 +34,18 @@
         android:layout_height="wrap_content">
 
         <Button
-            android:id="@+id/btnDecode"
-            android:text="@string/btnDecodeTitle"
+            android:id="@+id/btnEncode"
+            android:text="@string/btnEncodeTitle"
+            android:textAllCaps="false"
             android:textSize="14sp"
             android:layout_margin="3dp"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="70dp"/>
         <Button
-            android:id="@+id/btnEncode"
-            android:text="@string/btnEncodeTitle"
+            android:id="@+id/btnDecode"
+            android:text="@string/btnDecodeTitle"
+            android:textAllCaps="false"
             android:textSize="14sp"
             android:layout_margin="3dp"
             android:layout_weight="1"
@@ -53,6 +55,7 @@
         <Button
             android:id="@+id/btnClear"
             android:text="@string/btnClearTitle"
+            android:textAllCaps="false"
             android:textSize="14sp"
             android:layout_margin="3dp"
             android:layout_weight="1"
@@ -62,6 +65,7 @@
         <Button
             android:id="@+id/btnCopy"
             android:text="@string/btnCopyTitle"
+            android:textAllCaps="false"
             android:textSize="14sp"
             android:layout_margin="3dp"
             android:layout_weight="1"
@@ -79,6 +83,7 @@
     <TextView
         android:id="@+id/tvOutput"
         android:textSize="20sp"
+        android:textAllCaps="false"
         android:textColor="@color/black"
         android:paddingLeft="10dp"
         android:paddingTop="10dp"

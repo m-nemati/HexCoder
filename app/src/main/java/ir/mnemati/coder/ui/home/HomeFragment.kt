@@ -78,23 +78,47 @@ class HomeFragment : Fragment() {
             return bytes;
         }
 
-        /* *****  When decode button touched ***** */
-        btnDecode.setOnClickListener {
-
-            var inputStr = txtInput.text.toString()
-
-            val charset = Charsets.UTF_8
-            val byteArray = inputStr.toByteArray(charset)
-            val s = bytesToHex(byteArray)
-            txtOutput.text = s
-        }
-
         /* *****  When encode button touched ***** */
         btnEncode.setOnClickListener {
-            val inputStr2 = txtInput.text.toString()
-            val bytearray: ByteArray= decodeHexString(inputStr2)
-            val strOut = String(bytearray)
-            txtOutput.text = strOut
+
+           try {
+               txtOutput.text = ""
+               var inputStr = txtInput.text.toString()
+
+               val charset = Charsets.UTF_8
+               val byteArray = inputStr.toByteArray(charset)
+               val s = bytesToHex(byteArray)
+               var st = arrayOfNulls<String>(s.length / 2)
+               var z = 0
+               var l2 = s.length - 2
+               for (c in 0..l2 step 2){
+                   st[z] = "0x" + s[c] + s[c+1] + "t"
+                   z++
+               }
+
+               for(c2 in st){
+                   txtOutput.text = txtOutput.text.toString()+ c2 + "\n"
+               }
+           }
+           catch (e:Exception){
+               Toast.makeText(activity, "Please check input format", Toast.LENGTH_SHORT).show()
+           }
+        }
+
+        /* *****  When decode button touched ***** */
+        btnDecode.setOnClickListener {
+           try {
+               var inputStr2 = txtInput.text.toString()
+               inputStr2 = inputStr2.replace("0x", "")
+               inputStr2 = inputStr2.replace("t", "")
+               inputStr2 = inputStr2.replace("\n", "")
+               val bytearray: ByteArray= decodeHexString(inputStr2)
+               val strOut = String(bytearray)
+               txtOutput.text = strOut
+           }
+           catch (e:Exception){
+               Toast.makeText(activity, "Please check input format", Toast.LENGTH_SHORT).show()
+           }
         }
 
         /* *****  When Clear button touched ***** */
